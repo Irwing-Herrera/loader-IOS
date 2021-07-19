@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="loader" customModuleProvider="target">
+            <connections>
+                <outlet property="showLoaderButton" destination="gAU-Nu-UzT" id="cJ0-le-kaE"/>
+                <outlet property="showLoaderWithImageButton" destination="2ru-6h-6RJ" id="IEw-4X-zj0"/>
+                <outlet property="showLottieButton" destination="tgI-u5-KmV" id="CbV-fP-0gZ"/>
+                <outlet property="showViewModalButton" destination="wpy-Io-9yD" id="g6c-GF-W69"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oJL-Ka-x23">
+                    <rect key="frame" x="20" y="64" width="374" height="778"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAU-Nu-UzT">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="179.5"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                            <state key="normal" title="Mostrar Animacion">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="showLoaderAction:" destination="-1" eventType="touchUpInside" id="Itb-Hu-UG0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ru-6h-6RJ">
+                            <rect key="frame" x="0.0" y="199.5" width="374" height="179.5"/>
+                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                            <state key="normal" title="Mostrar Animacion con Imagen">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="showLoaderWithImageButton:" destination="-1" eventType="touchUpInside" id="bJN-3n-yqk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpy-Io-9yD">
+                            <rect key="frame" x="0.0" y="399" width="374" height="179.5"/>
+                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            <state key="normal" title="Mostrar viewModal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="showViewModalAction:" destination="-1" eventType="touchUpInside" id="MKR-0j-XDd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tgI-u5-KmV">
+                            <rect key="frame" x="0.0" y="598.5" width="374" height="179.5"/>
+                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <state key="normal" title="Mostrar Lottie">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="showLottieButton:" destination="-1" eventType="touchUpInside" id="Qfm-jh-c5w"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oJL-Ka-x23" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="6kb-4x-elU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oJL-Ka-x23" secondAttribute="trailing" constant="20" id="7FP-L9-vCS"/>
+                <constraint firstItem="oJL-Ka-x23" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="XRM-EQ-WMN"/>
+                <constraint firstItem="oJL-Ka-x23" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hBt-hY-lRn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oJL-Ka-x23" secondAttribute="bottom" constant="20" id="jf9-Sd-hNG"/>
+                <constraint firstItem="oJL-Ka-x23" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="q3q-8E-7bI"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
